@@ -15,7 +15,6 @@ scaler=pickle.load(open("scaler.pkl",'rb'))
 
 def diabetes_prediction(input_data):
     
-    
     input_predict_data=np.asarray(input_data)
     input_data_reshaped=input_predict_data.reshape(1,-1)
     std_data=scaler.transform(input_data_reshaped)
